@@ -4,7 +4,7 @@
 
 在已经安装了hexo的机器上，新建一个项目
 
-git clone git@github.com:Llinjing/blog_bak.git
+git clone git@github.com:Llinjing/myblog.git
 
 hexo s
 

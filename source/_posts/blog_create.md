@@ -1,7 +1,10 @@
 ---
 title: hexo+github搭建博客步骤
-tags: hexo,github pages
+tags:
+- hexo
+- github pages
 ---
+
 一时兴起，想搭建一个自己的博客，就动手搭建了一个，这里做一个记录，记录下自己踩得坑，以免自己以后忘记
 
 ## 整个搭建流程总览
@@ -12,7 +15,7 @@ tags: hexo,github pages
 创建本地hexo项目
 将本地hexo项目发布到github
 ```
-
++ <!-- more -->
 ## 具体操作流程
 
 

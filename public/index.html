@@ -189,7 +189,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-github-pages/">hexo,github pages</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/druid/">druid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github-pages/">github pages</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
                     </div>
                 </section>
                 
@@ -270,6 +270,72 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-druid_single_machine" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/04/26/druid_single_machine/" class="article-date">
+      <time datetime="2017-04-26T08:02:18.592Z" itemprop="datePublished">2017-04-26</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/26/druid_single_machine/">druid单机版搭建流程</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>  druid使用也有一年了，踩过的坑无数，现在虽然线上服务已经稳定，但是还是使用的小白，觉得还是有必要把搭建的流程记录下。<br>  单机版的搭建流程十分简单，适合机器资源不是很充足，或者对druid使用方法测试阶段。其实步骤跟官网上介绍的流程一样的，实时加载使用druid+tranquility，离线数据加载使用druid的batch加载方式。用的很简单，有不足的地方，望指教。</p>
+<ul>
+<li>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/druid/">druid</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2017/04/26/druid_single_machine/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-blog_create" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -299,13 +365,11 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>一时兴起，想搭建一个自己的博客，就动手搭建了一个，这里做一个记录，记录下自己踩得坑，以免自己以后忘记</p>
+              <p>一时兴起，想搭建一个自己的博客，就动手搭建了一个，这里做一个记录，记录下自己踩得坑，以免自己以后忘记</p>
 <h2 id="整个搭建流程总览"><a href="#整个搭建流程总览" class="headerlink" title="整个搭建流程总览"></a>整个搭建流程总览</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">创建自己的github账号</div><div class="line">创建username.github.io的项目</div><div class="line">创建本地hexo项目</div><div class="line">将本地hexo项目发布到github</div></pre></td></tr></table></figure>
-<h2 id="具体操作流程"><a href="#具体操作流程" class="headerlink" title="具体操作流程"></a>具体操作流程</h2><h3 id="创建github账号"><a href="#创建github账号" class="headerlink" title="创建github账号"></a>创建github账号</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">到https://github.com/注册自己的github账号</div></pre></td></tr></table></figure>
-<h3 id="在github中，创建一个仓库，命名为username-github-io-例：miaomiao-github-io"><a href="#在github中，创建一个仓库，命名为username-github-io-例：miaomiao-github-io" class="headerlink" title="在github中，创建一个仓库，命名为username.github.io (例：miaomiao.github.io)"></a>在github中，创建一个仓库，命名为username.github.io (例：miaomiao.github.io)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">特别说明：如果出现本地hexo服务正常，但是github上的博客项目不能访问，我这里遇到的情况是username没有使用自己github的账号，对项目重命名，就可以了。</div></pre></td></tr></table></figure>
-<h3 id="本地hexo项目创建"><a href="#本地hexo项目创建" class="headerlink" title="本地hexo项目创建"></a>本地hexo项目创建</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli (安装hexo)</div><div class="line">npm install </div><div class="line">hexo init (初始化hexo 项目)</div><div class="line">hexo generate (or hexo g) （生成静态文件）</div><div class="line">hexo deploy (or hexo d) (发布本地项目到github)</div></pre></td></tr></table></figure>
-<p>更多细节，不再赘述，可以参考: <a href="http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="external">http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more</a></p>
-
+<ul>
+<li>
+          
       
     </div>
     
@@ -315,9 +379,13 @@
 
       
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-github-pages/">hexo,github pages</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github-pages/">github pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2017/04/26/blog_create/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -364,16 +432,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+              <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<ul>
+<li>
+          
       
     </div>
     
@@ -382,6 +444,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/2017/04/26/hello-world/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>

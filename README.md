@@ -18,6 +18,7 @@ hexo s
 在重新clone后，如果hexo服务本地无法访问，报WARN  No layout: index.html
 解决：
 查看themes文件夹下，是否有对应的主题文件夹
+git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee
 
 
 -----------------------------------------------------

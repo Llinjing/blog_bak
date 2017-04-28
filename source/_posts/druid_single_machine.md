@@ -1,6 +1,6 @@
 ---
-title: druid单机版搭建流程
-tags: druid
+title: druid.io历史最详细单机搭建流程
+tags: druid.io
 ---
 
   druid使用也有一年了，踩过的坑无数，现在虽然线上服务已经稳定，但是还是使用的小白，觉得还是有必要把搭建的流程记录下。

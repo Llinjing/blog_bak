@@ -15,19 +15,17 @@
 
 
 
-<meta name="description" content="hexo支持的是Github Flavored Markdown语法先来个more，详情页你不会看到我的啦~~~~">
-<meta name="keywords" content="hexo,yelee">
+<meta name="description" content="最开始接触druid是在16年3月份，那时候相关的资料很少，只有官网上的资料，近段时间，发现有人出书了，现在将在读书中遇到的一些小重点记录下来，也算是一种经验的积累（工作是，实时加载用的是Index Service的方式来加载数据）。">
+<meta name="keywords" content="druid,tranquility,OLAP,share nothing">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo-Yelee 使用语法总结及注意">
-<meta property="og:url" content="https://llinjing.github.io/2017/04/28/druid_tranquility_overview/index.html">
+<meta property="og:title" content="druid书--阅读笔记">
+<meta property="og:url" content="https://llinjing.github.io/2017/05/02/druid/druid_book_read/index.html">
 <meta property="og:site_name" content="MiaoMiao">
-<meta property="og:description" content="hexo支持的是Github Flavored Markdown语法先来个more，详情页你不会看到我的啦~~~~">
-<meta property="og:image" content="https://llinjing.github.io/img/avatar.png">
-<meta property="og:updated_time" content="2017-04-28T08:27:42.033Z">
+<meta property="og:description" content="最开始接触druid是在16年3月份，那时候相关的资料很少，只有官网上的资料，近段时间，发现有人出书了，现在将在读书中遇到的一些小重点记录下来，也算是一种经验的积累（工作是，实时加载用的是Index Service的方式来加载数据）。">
+<meta property="og:updated_time" content="2017-05-03T09:03:01.766Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo-Yelee 使用语法总结及注意">
-<meta name="twitter:description" content="hexo支持的是Github Flavored Markdown语法先来个more，详情页你不会看到我的啦~~~~">
-<meta name="twitter:image" content="https://llinjing.github.io/img/avatar.png">
+<meta name="twitter:title" content="druid书--阅读笔记">
+<meta name="twitter:description" content="最开始接触druid是在16年3月份，那时候相关的资料很少，只有官网上的资料，近段时间，发现有人出书了，现在将在读书中遇到的一些小重点记录下来，也算是一种经验的积累（工作是，实时加载用的是Index Service的方式来加载数据）。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Hexo-Yelee 使用语法总结及注意 | MiaoMiao</title>
+<title>druid书--阅读笔记 | MiaoMiao</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -95,9 +93,12 @@
 <body>
   <div id="container">
     <div class="left-col">
-    <div class="overlay"></div>
+    <div class="overlay">
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</div>
 <div class="intrude-less">
     <header id="header" class="inner">
+
         <a href="/" class="profilepic">
             <img src="/img/avatar.png" class="animated zoomIn">
         </a>
@@ -184,7 +185,7 @@
                             
                                 <a class="fa Email" href="/1597850078@qq.com" title="Email"></a>
                             
-                                <a class="fa GitHub" href="https://github.com/Llinjing/Llinjing.github.io" title="GitHub"></a>
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
                             
                                 <a class="fa QQ" href="/1597850078" title="QQ"></a>
                             
@@ -195,7 +196,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/druid-io/">druid.io</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github-pages/">github pages</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yelee/">yelee</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OLAP/">OLAP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Photoshop/">Photoshop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/druid/">druid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/druid-io/">druid.io</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github-pages/">github pages</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/share-nothing/">share nothing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tranquility/">tranquility</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yelee/">yelee</a></li></ul>
                     </div>
                 </section>
                 
@@ -218,7 +219,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">但求问心无愧</div>
+                    <div id="js-aboutme">每天进步一点点</div>
                 </section>
                 
             </div>
@@ -264,7 +265,7 @@
                             
                                 <a class="fa Email" target="_blank" href="/1597850078@qq.com" title="Email"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="https://github.com/Llinjing/Llinjing.github.io" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa QQ" target="_blank" href="/1597850078" title="QQ"></a>
                             
@@ -274,11 +275,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-druid_tranquility_overview" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-druid/druid_book_read" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/04/28/druid_tranquility_overview/" class="article-date">
-      <time datetime="2017-04-27T16:00:00.000Z" itemprop="datePublished">2017-04-28</time>
+      <a href="/2017/05/02/druid/druid_book_read/" class="article-date">
+      <time datetime="2017-05-01T16:00:00.000Z" itemprop="datePublished">2017-05-02</time>
 </a>
 
 
@@ -293,7 +294,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo-Yelee 使用语法总结及注意
+      druid书--阅读笔记
     </h1>
   
 
@@ -302,13 +303,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+    <a class="article-category-link" href="/categories/druid/">druid</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yelee/">yelee</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OLAP/">OLAP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/druid/">druid</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/share-nothing/">share nothing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tranquility/">tranquility</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -318,80 +319,39 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h4 id="hexo支持的是Github-Flavored-Markdown语法"><a href="#hexo支持的是Github-Flavored-Markdown语法" class="headerlink" title="hexo支持的是Github Flavored Markdown语法"></a>hexo支持的是Github Flavored Markdown语法</h4><p>先来个more，详情页你不会看到我的啦~~~~</p>
+        <p>最开始接触druid是在16年3月份，那时候相关的资料很少，只有官网上的资料，近段时间，发现有人出书了，现在将在读书中遇到的一些小重点记录下来，也算是一种经验的积累（工作是，实时加载用的是Index Service的方式来加载数据）。</p>
  <a id="more"></a>
-<ol>
-<li>我是table</li>
+<h2 id="基本简介"><a href="#基本简介" class="headerlink" title="基本简介"></a>基本简介</h2><ol>
+<li>druid是一个分布式的支持实时分析的<strong> 数据存储系统 </strong>。</li>
+<li>数据集合包括<strong> 时间列（Timestamp）</strong>、<strong> 维度列（Dimension）</strong>、<strong> 指标列（Metrics）</strong>。</li>
+<li>数据摄入方式分为<strong> 实时数据摄入</strong>、<strong> 批处理数据摄入</strong>。</li>
+<li>实时数据处理部分是面向写多读少的优化，批处理部分是面向读多写少的优化。</li>
+<li>整个系统使用Zookeeper进行协调，mysql存储元数据。</li>
+<li>不支持JOIN</li>
+<li>按时间粒度对数据进行聚合。</li>
+<li>OLAP（联机分析处理），核心思想是建立多维度的数据立方体，以维度和度量为基本概念，辅以元数据实现可以钻取（Drill-down/up）、切片（Slice）、切块（Dice）的数据展现。</li>
+<li>Pinot与druid最为相似，整体设计更加完整和系统化</li>
+<li>druid标签：开源、实时、高效、简洁。</li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>he</th>
-<th>he</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li><p>我是引用</p>
+<h2 id="架构详解（realtime方式）"><a href="#架构详解（realtime方式）" class="headerlink" title="架构详解（realtime方式）"></a>架构详解（realtime方式）</h2><ol>
+<li><p>druid节点<br><strong>实时节点（Realtime Node）</strong>：摄入实时数据，生成segment数据文件<br><strong>历史节点（Historical Node）</strong>：加载已生成好的数据文件，供数据查询<br><strong>查询节点（Broker Node）</strong>：对外提供数据查询服务，并同时从实时节点和历史节点查询数据，合并后，返回给调用方<br><strong>协调节点（Coordinator Node）</strong>：负责历史节点的数据负载均衡，及通过规则（Rule）管理数据的生命周期</p>
+</li>
+<li><p>外部依赖<br><strong>元数据库</strong>：存储druid集群的原数据信息<br><strong>分布式协调服务（ZK）</strong>：为druid集群提供一致协调性服务<br><strong>数据文件存储库</strong>：存放生成的segment数据文件，供历史节点下载</p>
+</li>
+<li><p>索引（Index）：加速数据库数据的访问（使用树结构）</p>
+</li>
+<li><p>总体架构</p>
 <blockquote>
-<p>Tranquility is a Scala library that coordinates streaming ingestion through the Druid indexing service. It exists because the Druid indexing service API is fairly low level. In the indexing service, callers create “tasks” that run on a single machine using a fixed bundle of resources. Indexing tasks start up with a particular configuration and generally this configuration cannot be changed once the task is running.<br>Tranquility manages creation of Druid indexing tasks, handling partitioning, replication, service discovery, and schema rollover for you, seamlessly and without downtime. You never have to write code to deal with individual tasks directly.</p>
+<p>实时数据 –&gt; 加载到 –&gt; 实时节点内存中的堆结构缓存区 –&gt; （满足条件的时候）–&gt; 写进磁盘 –&gt; 形成数据块（segment split）–&gt;（同时）–&gt; 实时节点会立即将新生成的数据块 –&gt; 加载 –&gt; 内存中的非堆区 –&gt;（同时）–&gt; 实时节点周期性的将磁盘同一时间内生成的所有数据块合并为一个大的数据块（Segment Merge） –&gt;（立即）–&gt; 该segment被实时节点上传到数据文件存储库（HDFS…） –&gt;（随后）–&gt; 协调节点（coordinator）–&gt;（指导）–&gt; 历史节点 –&gt; 去文件存储库将新生成的segment下载到本地磁盘中 –&gt; 加载成功 –&gt; historical –&gt;（通过）–&gt; 协调节点（coordinator）–&gt; 声明从此刻开始提供该新生成的segment的查询 –&gt; 实时节点收到声明 –&gt; 声明自己不再提供该segment的查询。<br><br><br>查询节点会一直从实时节点和历史节点中查询数据，并做整合。</p>
 </blockquote>
 </li>
-<li><p>我是另一个引用</p>
-<blockquote>
-<p>Tranquility 是一个通过druid indexing service协调实时注入的scala库。它之所以存在是因为druid indexing service的api水平相当地低。对于indexing service,调用者生成tasks，这个tasks运行在一个使用固定的资源包的机器上。Indexing tasks 用一个特定的配置启动，通常tasks一旦启动，这个配置就不能更改了。</p>
-</blockquote>
-</li>
-<li><p>我是注意事项</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">注意：</div><div class="line">行与行之间，不能有多个换行，至多一个</div><div class="line">每个命令后面需要跟一个空格，不然命令会不生效</div><div class="line">列中穿插别的符号，就会重新开始索引的</div></pre></td></tr></table></figure>
-</li>
-<li><p>我是各种标题<br><pre></pre></p>
-<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><h6 id="标题5"><a href="#标题5" class="headerlink" title="标题5"></a>标题5</h6><h6 id="标题6"><a href="#标题6" class="headerlink" title="标题6"></a>标题6</h6></li>
-<li><p>我是代码段</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">woshi daima</div><div class="line">woshi daima</div><div class="line">woshi daima</div></pre></td></tr></table></figure>
-</li>
 </ol>
-<ol>
-<li><p>我是加粗字体<br><strong>加粗</strong></p>
-<p><code>你猜我是啥</code></p>
-</li>
-<li><p><code>下面的是多行代码呀</code><br><pre><br>fsdfgrg<br>ewrgrgregregre<br>frgr<br><code></code></pre></p>
-</li>
-<li></li>
+<h2 id="实际使用（Index-Service方式-tranquility）"><a href="#实际使用（Index-Service方式-tranquility）" class="headerlink" title="实际使用（Index Service方式-tranquility）"></a>实际使用（Index Service方式-tranquility）</h2><ol>
+<li>Master：协调节点（Coordinator）和统治节点（Overlord）</li>
+<li>Date：历史节点（Historical）和中间管理者（Middlemanager）</li>
+<li>Query：查询节点（Broker）</li>
 </ol>
-<ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-</ul>
-<ol>
-<li>下面的我疯啦，你猜他们都是啥<br><strong>lalal</strong><br><em>alalal</em><br><em>You <strong>can</strong> combine them</em></li>
-</ol>
-<ul>
-<li>Item 1</li>
-<li>Item 2<ul>
-<li>Item 2a</li>
-<li>Item 2b</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3<ol>
-<li>Item 3a</li>
-<li>Item 3b</li>
-</ol>
-</li>
-</ol>
-<p>I think you should use an<br><code>&lt;addr&gt;</code> element here instead.</p>
-<p><img src="/img/avatar.png" alt="GitHub Logo"></p>
+<h2 id="数据摄入"><a href="#数据摄入" class="headerlink" title="数据摄入"></a>数据摄入</h2><p>1.DataSchema<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;Datasource&quot;:&quot;&quot;, #string类型，数据源名字</div><div class="line">  &quot;parser&quot;：&quot;&#123;&#125;&quot;, #JSON对象，包含了如何解析数据相关内容</div><div class="line">  &quot;metricsSpec&quot;:&quot;&#123;&#125;&quot;, #list包含了所有的指标列信息</div><div class="line">  &quot;graunlaritySpec&quot;:&quot; #JSON对象，指明数据的存储和查询力度&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -400,13 +360,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/04/28/druid_tranquility_overview/">Hexo-Yelee 使用语法总结及注意</a></p>
+        <p><span>本文标题:</span><a href="/2017/05/02/druid/druid_book_read/">druid书--阅读笔记</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">李先生</a></p>
-        <p><span>发布时间:</span>2017-04-28, 00:00:00</p>
-        <p><span>最后更新:</span>2017-04-28, 16:27:42</p>
+        <p><span>发布时间:</span>2017-05-02, 00:00:00</p>
+        <p><span>最后更新:</span>2017-05-03, 17:03:01</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/04/28/druid_tranquility_overview/" title="Hexo-Yelee 使用语法总结及注意">https://llinjing.github.io/2017/04/28/druid_tranquility_overview/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://llinjing.github.io/2017/04/28/druid_tranquility_overview/　　作者: 李先生" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/02/druid/druid_book_read/" title="druid书--阅读笔记">https://llinjing.github.io/2017/05/02/druid/druid_book_read/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://llinjing.github.io/2017/05/02/druid/druid_book_read/　　作者: 李先生" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -419,11 +379,17 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/04/26/druid_single_machine/">
-                    druid.io历史最详细单机搭建流程
+                <a href="/2017/04/28/hexo_yufa/">
+                    Hexo-Yelee 使用语法总结及注意
                 </a>
             </div>
         
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/05/04/ps/ps/">
+                    ps学习
+                </a>
+            </div>
         
     </nav>
 
@@ -433,7 +399,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#hexo支持的是Github-Flavored-Markdown语法"><span class="toc-number">1.</span> <span class="toc-text">hexo支持的是Github Flavored Markdown语法</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#标题1"><span class="toc-number"></span> <span class="toc-text">标题1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#标题2"><span class="toc-number"></span> <span class="toc-text">标题2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#标题3"><span class="toc-number"></span> <span class="toc-text">标题3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#标题4"><span class="toc-number">1.</span> <span class="toc-text">标题4</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#标题5"><span class="toc-number">1.0.1.</span> <span class="toc-text">标题5</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#标题6"><span class="toc-number">1.0.2.</span> <span class="toc-text">标题6</span></a></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本简介"><span class="toc-number">1.</span> <span class="toc-text">基本简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#架构详解（realtime方式）"><span class="toc-number">2.</span> <span class="toc-text">架构详解（realtime方式）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实际使用（Index-Service方式-tranquility）"><span class="toc-number">3.</span> <span class="toc-text">实际使用（Index Service方式-tranquility）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据摄入"><span class="toc-number">4.</span> <span class="toc-text">数据摄入</span></a></li></ol>
         
     </div>
     <style>
@@ -455,47 +421,8 @@
 
 
 
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hexo-Yelee 使用语法总结及注意　| MiaoMiao　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
-</div>
 
 
-
-
-
-
-
-    
-        <section class="youyan" id="comments">
-    <script>
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = 'http://v2.uyan.cc/code/uyan.js?uid=2132440';
-            (d.head || d.body).appendChild(s);
-        }
-    </script>
-    
-    <script> loadComment(); </script>
-
-    <div id="uyan_frame"></div>
-</section>
     
 
 
@@ -503,7 +430,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/04/26/druid_single_machine/" title="上一篇: druid.io历史最详细单机搭建流程">
+            <a href="/2017/04/28/hexo_yufa/" title="上一篇: Hexo-Yelee 使用语法总结及注意">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -511,11 +438,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/05/04/ps/ps/" title="下一篇: ps学习">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/28/druid_tranquility_overview/">Hexo-Yelee 使用语法总结及注意</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/druid_single_machine/">druid.io历史最详细单机搭建流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/blog_create/">hexo+github搭建博客步骤</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/ps/ps/">ps学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/druid/druid_book_read/">druid书--阅读笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/28/hexo_yufa/">Hexo-Yelee 使用语法总结及注意</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/druid_single_machine/">druid.io历史最详细单机搭建流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/blog_create/">hexo+github搭建博客步骤</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/hello-world/">Hello World</a></li></ul>
 
 
 

@@ -15,15 +15,17 @@
 
 
 
-<meta name="description" content="我要瘦成一道闪电，亮瞎你的钛合金狗眼">
-<meta property="og:type" content="website">
-<meta property="og:title" content="李林静的官方博客">
-<meta property="og:url" content="https://llinjing.github.io/tags/tar/index.html">
+<meta name="description" content="centos 操作系统6.3 python版本由2.6升级到2.7">
+<meta name="keywords" content="linux,python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="centos 6.3 python 2.6版本升级到2.7">
+<meta property="og:url" content="https://llinjing.github.io/2017/08/14/linux/python_install/index.html">
 <meta property="og:site_name" content="李林静的官方博客">
-<meta property="og:description" content="我要瘦成一道闪电，亮瞎你的钛合金狗眼">
+<meta property="og:description" content="centos 操作系统6.3 python版本由2.6升级到2.7">
+<meta property="og:updated_time" content="2017-08-14T08:08:27.994Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="李林静的官方博客">
-<meta name="twitter:description" content="我要瘦成一道闪电，亮瞎你的钛合金狗眼">
+<meta name="twitter:title" content="centos 6.3 python 2.6版本升级到2.7">
+<meta name="twitter:description" content="centos 操作系统6.3 python版本由2.6升级到2.7">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -55,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Tag: tar | 李林静的官方博客</title>
+<title>centos 6.3 python 2.6版本升级到2.7 | 李林静的官方博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -65,9 +67,9 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
-        isTag: true,
+        isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
@@ -273,60 +275,162 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-linux/python_install" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/05/05/linux/file/" class="archive-article-date">
-      <time datetime="2017-05-04T16:00:00.000Z" itemprop="datePublished">05-05</time>
+    <div class="article-meta">
+      <a href="/2017/08/14/linux/python_install/" class="article-date">
+      <time datetime="2017-08-13T16:00:00.000Z" itemprop="datePublished">2017-08-14</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/05/linux/file/">Linux文件解压和压缩语法总结</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      centos 6.3 python 2.6版本升级到2.7
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+    <a class="article-category-link" href="/categories/python-linux/">python,linux</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tar/">tar</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>centos 操作系统6.3 python版本由2.6升级到2.7</p>
+ <a id="more"></a>
+<h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><ol>
+<li><p><strong>查看当前python版本</strong><br>python  -V</p>
+</li>
+<li><p><strong>下载Python-2.7.3</strong><br>wget <a href="http://python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2" target="_blank" rel="external">http://python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2</a><br>（备注：如果不能下载，可直接在浏览器输入上面地址，下载好以后，上传到机器即可）</p>
+</li>
+<li><p><strong>更改工作目录</strong><br>cd Python-2.7.3</p>
+</li>
+<li><p><strong>安装</strong><br>./configure<br>make all<br>make install</p>
+</li>
+<li><p><strong>查看安装后的版本信息</strong><br>/usr/local/bin/python2.7 -V</p>
+</li>
+<li><p><strong>建立软连接，使系统默认的 python指向 python2.7</strong><br>mv /usr/bin/python /usr/bin/python2.6.6 #移除原有的2.6<br>ln -s /usr/local/bin/python2.7 /usr/bin/python</p>
+</li>
+<li><p><strong>重新检验Python 版本</strong><br>python -V</p>
+</li>
+<li><p><strong>解决系统 Python 软链接指向 Python2.7 版本后，因为yum是不兼容 Python 2.7的，所以yum不能正常工作，我们需要指定 yum 的Python版本</strong><br>vi /usr/bin/yum<br>将文件头部的 #!/usr/bin/python 改为 #!/usr/bin/python2.6.6</p>
+</li>
+</ol>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/08/14/linux/python_install/">centos 6.3 python 2.6版本升级到2.7</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">李林静</a></p>
+        <p><span>发布时间:</span>2017-08-14, 00:00:00</p>
+        <p><span>最后更新:</span>2017-08-14, 16:08:27</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/08/14/linux/python_install/" title="centos 6.3 python 2.6版本升级到2.7">https://llinjing.github.io/2017/08/14/linux/python_install/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://llinjing.github.io/2017/08/14/linux/python_install/　　作者: 李林静" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/08/09/kafka/operate/">
+                    kafka基本操作
+                </a>
+            </div>
+        
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#操作流程"><span class="toc-number">1.</span> <span class="toc-text">操作流程</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/08/09/kafka/operate/" title="上一篇: kafka基本操作">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/08/14/linux/python_install/">centos 6.3 python 2.6版本升级到2.7</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/09/kafka/operate/">kafka基本操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/09/kafka/delete_topic/">解决kafka topic 删除重建后，状态依旧为删除的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/15/xshell5/">xhell5 激活</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/09/pom/">maven pom配置详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/08/dashboard/dashboard/">Dashboard使用说明</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/linux/file/">Linux文件解压和压缩语法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/plan/">学习计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/ps/ps/">ps学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/file/file/">Linux文件操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/druid/druid_book_read/">druid书--阅读笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/28/hexo_yufa/">Hexo-Yelee 使用语法总结及注意</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/druid_single_machine/">druid.io历史最详细单机搭建流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/blog_create/">hexo+github搭建博客步骤</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/hello-world/">初识</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">

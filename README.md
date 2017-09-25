@@ -8,10 +8,10 @@
 
 ### 在已经安装了hexo的机器上，新建一个项目
 
-*1.git clone git@github.com:Llinjing/myblog.git
-*2.hexo s：启动当前服务，本地访问：localhost:4000
-*3.hexo g：生成静态文件，这个在要发布项目的时候执行
-*4.hexo d：项目发布到github
+* 1.git clone git@github.com:Llinjing/myblog.git
+* 2.hexo s：启动当前服务，本地访问：localhost:4000
+* 3.hexo g：生成静态文件，这个在要发布项目的时候执行
+* 4.hexo d：项目发布到github
 (执行以上命令即可)
 
 ### 在没有安装hexo的机器上，要先执行安装hexo的命令

@@ -15,15 +15,26 @@
 
 
 
-<meta name="description" content="我要瘦成一道闪电，亮瞎你的钛合金狗眼">
-<meta property="og:type" content="website">
-<meta property="og:title" content="李林静的官方博客">
-<meta property="og:url" content="https://llinjing.github.io/tags/share-nothing/index.html">
+<meta name="description" content="复杂的软件必须有清晰合理的架构，否则无法开发和维护。MVC（Model-View-Controller）是最常见的软件架构之一，业界有着广泛应用">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MVC，MVP 和 MVVM 的图示">
+<meta property="og:url" content="https://llinjing.github.io/2017/09/25/vue/mvc/index.html">
 <meta property="og:site_name" content="李林静的官方博客">
-<meta property="og:description" content="我要瘦成一道闪电，亮瞎你的钛合金狗眼">
+<meta property="og:description" content="复杂的软件必须有清晰合理的架构，否则无法开发和维护。MVC（Model-View-Controller）是最常见的软件架构之一，业界有着广泛应用">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/20170925123312.jpg">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/bg2015020104.png">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/bg2015020105.png">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/bg2015020106.png">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/bg2015020107.png">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/bg2015020108.png">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/bg2015020109.png">
+<meta property="og:image" content="https://llinjing.github.io/img/vue/bg2015020110.png">
+<meta property="og:updated_time" content="2017-09-25T04:34:25.958Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="李林静的官方博客">
-<meta name="twitter:description" content="我要瘦成一道闪电，亮瞎你的钛合金狗眼">
+<meta name="twitter:title" content="MVC，MVP 和 MVVM 的图示">
+<meta name="twitter:description" content="复杂的软件必须有清晰合理的架构，否则无法开发和维护。MVC（Model-View-Controller）是最常见的软件架构之一，业界有着广泛应用">
+<meta name="twitter:image" content="https://llinjing.github.io/img/vue/20170925123312.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -55,7 +66,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Tag: share nothing | 李林静的官方博客</title>
+<title>MVC，MVP 和 MVVM 的图示 | 李林静的官方博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -65,9 +76,9 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
-        isTag: true,
+        isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
@@ -273,60 +284,153 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-vue/mvc" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/05/02/druid/druid_book_read/" class="archive-article-date">
-      <time datetime="2017-05-01T16:00:00.000Z" itemprop="datePublished">05-02</time>
+    <div class="article-meta">
+      <a href="/2017/09/25/vue/mvc/" class="article-date">
+      <time datetime="2017-09-25T03:45:55.726Z" itemprop="datePublished">2017-09-25</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/02/druid/druid_book_read/">druid书--阅读笔记</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MVC，MVP 和 MVVM 的图示
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/druid/">druid</a>
-    </div>
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OLAP/">OLAP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/druid/">druid</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/share-nothing/">share nothing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tranquility/">tranquility</a></li></ul>
-    </div>
-
-        </div>
+        
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><img src="/img/vue/20170925123312.jpg" alt="GitHub Logo"><br>复杂的软件必须有清晰合理的架构，否则无法开发和维护。MVC（Model-View-Controller）是最常见的软件架构之一，业界有着广泛应用</p>
+<ul>
+<li><a id="more"></a>
+</li>
+</ul>
+<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><p>MVC模式的意思是，软件可以分成三个部分。<br><img src="/img/vue/bg2015020104.png" alt="GitHub Logo"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">视图（View）：用户界面。</div><div class="line">控制器（Controller）：业务逻辑</div><div class="line">模型（Model）：数据保存</div></pre></td></tr></table></figure></p>
+<p><img src="/img/vue/bg2015020105.png" alt="GitHub Logo"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">View 传送指令到 Controller</div><div class="line">Controller 完成业务逻辑后，要求 Model 改变状态</div><div class="line">Model 将新的数据发送到 View，用户得到反馈</div></pre></td></tr></table></figure>
+<p>所有通信都是单向的。</p>
+<h2 id="互动模式"><a href="#互动模式" class="headerlink" title="互动模式"></a>互动模式</h2><p>接受用户指令时，MVC 可以分成两种方式。一种是通过 View 接受指令，传递给 Controller。</p>
+<p><img src="/img/vue/bg2015020106.png" alt="GitHub Logo"></p>
+<p>另一种是直接通过controller接受指令。<br><img src="/img/vue/bg2015020107.png" alt="GitHub Logo"></p>
+<h2 id="实例：Backbone"><a href="#实例：Backbone" class="headerlink" title="实例：Backbone"></a>实例：Backbone</h2><p><img src="/img/vue/bg2015020108.png" alt="GitHub Logo"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">用户可以向 View 发送指令（DOM 事件），再由 View 直接要求 Model 改变状态。</div><div class="line">用户也可以直接向 Controller 发送指令（改变 URL 触发 hashChange 事件），再由 Controller 发送给 View。</div><div class="line">Controller 非常薄，只起到路由的作用，而 View 非常厚，业务逻辑都部署在 View。所以，Backbone 索性取消了Controller，只保留一个 Router（路由器） 。</div></pre></td></tr></table></figure>
+<h2 id="MVP"><a href="#MVP" class="headerlink" title="MVP"></a>MVP</h2><p>MVP 模式将 Controller 改名为 Presenter，同时改变了通信方向。</p>
+<p><img src="/img/vue/bg2015020109.png" alt="GitHub Logo"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">各部分之间的通信，都是双向的。</div><div class="line">View 与 Model 不发生联系，都通过 Presenter 传递。</div><div class="line">View 非常薄，不部署任何业务逻辑，称为&quot;被动视图&quot;（Passive View），即没有任何主动性，而Presenter非常厚，所有逻辑都部署在那里。</div></pre></td></tr></table></figure></p>
+<h2 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h2><p>MVVM 模式将 Presenter 改名为 ViewModel，基本上与 MVP 模式完全一致。</p>
+<p><img src="/img/vue/bg2015020110.png" alt="GitHub Logo"></p>
+<p>唯一的区别是，它采用双向绑定（data-binding）：View的变动，自动反映在 ViewModel，反之亦然。Angular 和Ember 都采用这种模式。</p>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2017/09/25/vue/mvc/">MVC，MVP 和 MVVM 的图示</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">李林静</a></p>
+        <p><span>Created:</span>2017-09-25, 11:45:55</p>
+        <p><span>Updated:</span>2017-09-25, 12:34:25</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2017/09/25/vue/mvc/" title="MVC，MVP 和 MVVM 的图示">https://llinjing.github.io/2017/09/25/vue/mvc/</a>
+            <span class="copy-path" data-clipboard-text="From https://llinjing.github.io/2017/09/25/vue/mvc/　　By 李林静" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/08/14/linux/python_install/">
+                    centos 6.3 python 2.6版本升级到2.7
+                </a>
+            </div>
+        
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MVC"><span class="toc-number">1.</span> <span class="toc-text">MVC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#互动模式"><span class="toc-number">2.</span> <span class="toc-text">互动模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实例：Backbone"><span class="toc-number">3.</span> <span class="toc-text">实例：Backbone</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MVP"><span class="toc-number">4.</span> <span class="toc-text">MVP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MVVM"><span class="toc-number">5.</span> <span class="toc-text">MVVM</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+
+    <script>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+    </script>
+
+
+
+
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/08/14/linux/python_install/" title="Pre: centos 6.3 python 2.6版本升级到2.7">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/25/vue/mvc/">MVC，MVP 和 MVVM 的图示</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/14/linux/python_install/">centos 6.3 python 2.6版本升级到2.7</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/09/kafka/operate/">kafka基本操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/09/kafka/delete_topic/">解决kafka topic 删除重建后，状态依旧为删除的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/15/xshell5/">xhell5 激活</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/09/pom/">maven pom配置详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/08/dashboard/dashboard/">Dashboard使用说明</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/linux/file/">Linux文件解压和压缩语法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/plan/">学习计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/file/file/">Linux文件操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/ps/ps/">ps学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/druid/druid_book_read/">druid书--阅读笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/28/hexo_yufa/">Hexo-Yelee 使用语法总结及注意</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/druid_single_machine/">druid.io历史最详细单机搭建流程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/blog_create/">hexo+github搭建博客步骤</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/hello-world/">初识</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">

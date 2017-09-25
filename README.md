@@ -8,16 +8,16 @@
 
 ### 在已经安装了hexo的机器上，新建一个项目
 
-git clone git@github.com:Llinjing/myblog.git
-hexo s：启动当前服务，本地访问：localhost:4000
-hexo g：生成静态文件，这个在要发布项目的时候执行
-hexo d：项目发布到github
-执行以上命令即可
+1.git clone git@github.com:Llinjing/myblog.git
+2.hexo s：启动当前服务，本地访问：localhost:4000
+3.hexo g：生成静态文件，这个在要发布项目的时候执行
+4.hexo d：项目发布到github
+(执行以上命令即可)
 
 ### 在没有安装hexo的机器上，要先执行安装hexo的命令
 
-npm install -g hexo
-hexo init
+1.npm install -g hexo
+2.hexo init
 然后下载该项目下的文件
 在重新clone后，如果hexo服务本地无法访问，报WARN  No layout: index.html
 解决：
@@ -28,9 +28,9 @@ git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee
 
 ## 项发布以后，备份项目的提交
 
-git add . ：提交当前修改的文件
-git commit -m ""
-git push
+1.git add . ：提交当前修改的文件
+2.git commit -m ""
+3.git push
 
 -----------------------------------------------------
 

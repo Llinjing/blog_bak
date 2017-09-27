@@ -90,6 +90,11 @@ cnpm run dev
 ![GitHub Logo](/img/vue/20170927144950.png)
 
 
+## 发布
+```
+cnpm run build
+```
+发布以后会生成一个dist文件夹，可以直接拿这个文件是发布项目
 
 
 

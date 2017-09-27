@@ -91,19 +91,19 @@ _You **can** combine them_
 
 I think you should use an
 `<addr>` element here instead.
-   
-   
+
+
+## hexo插入图片，并控制图片大小
+```
+<div align=left>
+    <img src="/img/vue/238555602663002408.jpg" width="600" height="400" alt=""/>
+</div>
+```
+
+## hexo 一般插入图片简单方法
+```
 ![GitHub Logo](/img/avatar.png)
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+```
+
+
  

@@ -73,4 +73,24 @@ cnpm install --global vue-cli
 记得上面那个问题吗？？解决了，安装个client，就解决了，好无语，等待大神告诉为什么- _ -
 
 
+## 创建基于webpack的vue project
+```
+vue init webpack vue_test
+cd vue_test
+cnpm install
+```
+![GitHub Logo](/img/vue/20170927144838.png)
+
+
+## 运行vue project
+```
+cnpm run dev
+```
+![GitHub Logo](/img/vue/20170927145044.png)
+![GitHub Logo](/img/vue/20170927144950.png)
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-## github 博客project部署[centos8]：
+## github 博客project部署[centos8]
 ### 环境准备
 #### nodejs 二进制安装包安装步骤
 ```

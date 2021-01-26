@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 李林静的官方博客
-subtitle: 有点伤感的喵喵
-description: 我要瘦成一道闪电，亮瞎你的钛合金狗眼
-author: 李林静
+title: W
+subtitle: M
+description: 只管努力，时间会证明一切！
+author: W
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -63,7 +63,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yelee
+#theme: yelee
+theme: hexo-theme-matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

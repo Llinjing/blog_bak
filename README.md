@@ -14,6 +14,7 @@ node -v
 ```
 #### hexo安装
 ```
+mkdir hexo && cd hexo 
 npm install hexo-cli
 # 如果没有自己的代码，可以执行init，生成一个属于自己的项目，如果已经有自己的代码，这步可以跳过
 hexo init # 这里需要在一个空文件夹中执行，会生成一个新的项目

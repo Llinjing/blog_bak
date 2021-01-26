@@ -1,41 +1,49 @@
+## github 博客project部署[centos8]：
+### 环境准备
+#### nodejs 二进制安装包安装步骤
+```
+cd /home/lilinjing/software
+wget https://npm.taobao.org/mirrors/node/v8.9.3/node-v8.9.3-linux-x64.tar.xz #可以自己配置下载的版本
+tar xf node-v8.9.3-linux-x64.tar.xz 
+ln -snf node-v8.9.3 nodejs
+sudo su - 
+ln -s /home/lilinjing/software/nodejs/bin/node  /usr/local/bin/node
+ln -s /home/lilinjing/softwarenodejs/bin/npm   /usr/local/bin/npm
+# 查看node 版本
+node -v
+```
+#### hexo
+```
+npm install hexo-cli
+# 如果没有自己的代码，可以执行init，生成一个属于自己的项目，如果已经有自己的代码，这步可以跳过
+hexo init # 这里需要在一个空文件夹中执行，会生成一个新的项目
+```
 
-# blog_bak
-我的博客的代码的备份
-
-
-## 项目的部署：
-
-#### 在已经安装了hexo的机器上，新建一个项目
-
+### 下载myblog 代码
 ```
 git clone git@github.com:Llinjing/myblog.git
-hexo s：启动当前服务，本地访问：localhost:4000
-hexo g：生成静态文件，这个在要发布项目的时候执行
-hexo d：项目发布到github
 ```
-(执行以上命令即可)
 
-
-#### 在没有安装hexo的机器上，要先执行安装hexo的命令
-
+### 本地调试
+按照自己的需求修改代码，其中_config.yml中为主页面可以配置不同的主题，public为子页面
 ```
-npm install -g hexo
-hexo init
+hexo s
+  启动当前服务，本地访问：localhost:4000
 ```
-然后下载该项目下的文件 <br />
-在重新clone后，如果hexo服务本地无法访问，报WARN  No layout: index.html
-解决：
-查看themes文件夹下，是否有对应的主题文件夹
-git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee
 
-
-## 项发布以后，备份项目的提交
-
+### 发布本地项目到github
 ```
-git add . ：提交当前修改的文件
+hexo g
+  生成静态文件，这个在要发布项目的时候执行
+hexo d
+  项目发布到github
+```
+注：如果报deploy文件异常，将该文件删除即可
+
+### 项发布以后，将自己的本地代码提交到git，以便后续修改更新
+```
+git add .  # 提交当前修改的文件
 git commit -m ""
 git push
 ```
-
-
 

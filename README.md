@@ -12,7 +12,7 @@ ln -s /home/lilinjing/softwarenodejs/bin/npm   /usr/local/bin/npm
 # 查看node 版本
 node -v
 ```
-#### hexo
+#### hexo安装
 ```
 npm install hexo-cli
 # 如果没有自己的代码，可以执行init，生成一个属于自己的项目，如果已经有自己的代码，这步可以跳过

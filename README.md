@@ -30,6 +30,8 @@ git clone git@github.com:Llinjing/myblog.git
 ```
 hexo s
   启动当前服务，本地访问：localhost:4000
+hexo s -p 5000
+  指定端口启动  
 ```
 
 ### 3.发布本地项目到github

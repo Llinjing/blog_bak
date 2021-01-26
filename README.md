@@ -1,5 +1,5 @@
 ## github 博客project部署[centos8]
-### 环境准备
+### 0.环境准备
 #### nodejs 二进制安装包安装步骤
 ```
 cd /home/lilinjing/software
@@ -19,19 +19,19 @@ npm install hexo-cli
 hexo init # 这里需要在一个空文件夹中执行，会生成一个新的项目
 ```
 
-### 下载myblog 代码
+### 1.下载myblog 代码
 ```
 git clone git@github.com:Llinjing/myblog.git
 ```
 
-### 本地调试
+### 2.本地调试
 按照自己的需求修改代码，其中_config.yml中为主页面可以配置不同的主题，public为子页面
 ```
 hexo s
   启动当前服务，本地访问：localhost:4000
 ```
 
-### 发布本地项目到github
+### 3.发布本地项目到github
 ```
 hexo g
   生成静态文件，这个在要发布项目的时候执行
@@ -40,10 +40,12 @@ hexo d
 ```
 注：如果报deploy文件异常，将该文件删除即可
 
-### 项发布以后，将自己的本地代码提交到git，以便后续修改更新
+### 4.项发布以后，将自己的本地代码提交到git，以便后续修改更新
 ```
 git add .  # 提交当前修改的文件
 git commit -m ""
 git push
 ```
 
+### 5.访问博客
+https://llinjing.github.io/
